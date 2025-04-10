@@ -1,16 +1,14 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
 import Layout from "../../components/layout/layout";
 import Form from "./components/form/form";
 
-const Addblog = () => {
+const Editblog = () => {
   return (
     <div>
-      <Layout>
-        <Form type="Add" />
-      </Layout>
+      <Layout />
+      <Form type="Edit" />
     </div>
   );
 };
 
-export default Addblog;
+export default Editblog;
