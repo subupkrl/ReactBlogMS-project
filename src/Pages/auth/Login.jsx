@@ -10,6 +10,7 @@ const login = () => {
       const response = await axios.post("//api", data); //for connecting frontend an backend
       console.log(response);
       if (response.status === 200) {
+        localStorage.setItem("token", response.data.token);
         navigate("/");
       } else {
         alert("login failed");
