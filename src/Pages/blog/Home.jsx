@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar";
 import Layout from "../../components/layout/layout";
 import Card from "./components/card/Card";
+import axios from "axios";
 
 const Home = () => {
   const [blogs, setBlogs] = useState([]);
